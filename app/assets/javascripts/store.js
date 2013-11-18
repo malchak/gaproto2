@@ -3,3 +3,7 @@
 App.Store = DS.Store.extend({
   adapter: DS.ActiveModelAdapter.create()
 });
+
+App.ApplicationAdapter = DS.ActiveModelAdapter.extend({
+	namespace: 'api/v1'
+});
