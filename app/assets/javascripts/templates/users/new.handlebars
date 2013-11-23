@@ -1,0 +1,19 @@
+<div class="small-8 small-offset-1 columns">
+<h2>Become a Grade+Aid Member and experience the difference!</h2>
+<form>
+  <fieldset>
+    <legend>Sign Up</legend>
+    <div>
+      {{view Ember.TextField placeholder="Email" valueBinding="email" name="email"}}
+    </div>
+    <div>
+      {{view Ember.TextField placeholder="Password" valueBinding="password" name="password"}}
+    </div>
+    <div>
+      {{view Ember.TextField placeholder="Confirm Password" valueBinding="passwordConfirmation" name="passwordConfirmation"}}
+    </div>
+    <button {{action 'save'}} class="button">Save</button>
+    <a href='#' {{action 'cancel'}} class='button alert'>Cancel</a>
+  </fieldset>
+</form>
+<div>
