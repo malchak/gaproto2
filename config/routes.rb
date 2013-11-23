@@ -3,7 +3,7 @@ Gaproto2::Application.routes.draw do
   
   namespace :api do
     namespace :v1 do
-      #add resources here
+      resources :users
     end
   end
 
